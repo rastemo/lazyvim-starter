@@ -3,3 +3,15 @@
 -- Add any additional keymaps here
 vim.keymap.set("n", "ö", "$", { silent = true })
 vim.keymap.set("v", "ö", "$", { silent = true })
+
+vim.keymap.set("n", "<leader>.", "<C-w>v")
+
+vim.keymap.set("n", "<C-d>", "<C-d>zz")
+vim.keymap.set("n", "<C-u>", "<C-u>zz")
+vim.keymap.set("n", "n", "nzzzv")
+vim.keymap.set("n", "N", "Nzzzv")
+vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+
+-- disable lazygit keymaps
+vim.keymap.del("n", "<leader>gG")

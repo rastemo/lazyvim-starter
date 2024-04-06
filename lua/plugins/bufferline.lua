@@ -4,7 +4,7 @@ return {
     opts = {
       options = {
         mode = "tabs",
-        -- diagnostics = "nvim_lsp",
+        diagnostics = "nvim_lsp",
         offsets = { {} },
       },
     },

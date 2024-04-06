@@ -1,6 +1,16 @@
 return {
   "nvim-neo-tree/neo-tree.nvim",
-  -- opts = {
-  --   filesystem = { hijack_netrw_behavior = "open_current" },
-  -- },
+  opts = {
+    default_component_configs = {
+      indent = {
+        expander_collapsed = "❯",
+      },
+    },
+    filesystem = {
+      filtered_items = {
+        -- hide_hidden = false,
+        hide_dotfiles = false,
+      },
+    },
+  },
 }
